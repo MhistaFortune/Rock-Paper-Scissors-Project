@@ -12,6 +12,7 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Features](#features)
+  - [PWA Capabilities](#pwa-capabilities)
 - [Getting Started](#getting-started)
 - [Author](#author)
 
@@ -44,8 +45,8 @@ TABLET VIEWS
 
 ### Links
 
-- Solution URL: [Add your solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add your live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add your solution URL here](https://github.com/MhistaFortune/Rock-Paper-Scissors-Project)
+- Live Site URL: [Add your live site URL here](https://rock-paper-scissors-project-alpha.vercel.app/)
 
 ## My process
 
@@ -57,6 +58,7 @@ TABLET VIEWS
 - [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) - For styling variables
 - [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) - For layout
 - [Mobile-first workflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#mobile-first_design) - For responsive design
+- [Vite PWA Plugin](https://vite-pwa-org.netlify.app/) - For Progressive Web App capabilities
 
 ### What I learned
 
@@ -68,6 +70,14 @@ During this project, I deepened my understanding of state management in React, p
 - **Score Persistence**: Your progress is automatically saved to browser storage.
 - **Responsive Layout**: Pixel-perfect designs for both mobile and desktop views.
 - **Interactive Modals**: Dynamic rules modal that adapts to the current game mode.
+- **PWA Ready**: Install the game on your home screen and play offline.
+
+### PWA Capabilities
+
+This project is a fully compliant Progressive Web App:
+- **Offline Support**: The game remains playable even without an internet connection.
+- **Installable**: Users on Chrome (Desktop/Android) and Safari (iOS) can "Add to Home Screen" for a native app-like experience.
+- **Fast Loading**: Assets are cached locally via a Service Worker for near-instant load times.
 
 ## Getting Started
 
@@ -89,5 +99,5 @@ To run this project locally:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@MhistaFortune](https://www.frontendmentor.io/profile/MhistaFortune)
 - Coded by **Mhista Fortune**

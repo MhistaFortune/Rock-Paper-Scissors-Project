@@ -1,0 +1,95 @@
+.install-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 12px;
+    padding: 12px 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 400px;
+    z-index: 1000;
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translate(-50%, 100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+}
+
+.install-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.install-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.install-text {
+    text-align: left;
+}
+
+.install-title {
+    color: #3b4262;
+    font-weight: 700;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.install-desc {
+    color: #606e85;
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+.install-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.install-btn {
+    background: #3b4262;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: opacity 0.2s;
+}
+
+.install-btn:hover {
+    opacity: 0.9;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #606e85;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 4px;
+}
+
+@media (min-width: 768px) {
+    .install-banner {
+        bottom: 30px;
+    }
+}

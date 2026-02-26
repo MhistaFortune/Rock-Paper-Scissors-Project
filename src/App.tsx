@@ -5,6 +5,7 @@ import GameSelection from './components/GameSelection';
 import GameSelectionOriginal from './components/GameSelectionOriginal';
 import GameResult from './components/GameResult';
 import RulesModal from './components/RulesModal';
+import InstallPWA from './components/InstallPWA';
 import type { Choice, GameMode } from './logic/game-logic';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     const saved = localStorage.getItem('rps-score');
     return saved ? parseInt(saved, 10) : 0;
   });
-  
+
   const [gameMode, setGameMode] = useState<GameMode>(() => {
     const saved = localStorage.getItem('rps-mode');
     return (saved as GameMode) || 'bonus';
@@ -45,6 +46,7 @@ function App() {
 
   return (
     <main className="app-container">
+      <InstallPWA />
       <Header score={score} mode={gameMode} />
 
       {!playerChoice ? (
