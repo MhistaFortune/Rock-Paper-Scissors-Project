@@ -1,0 +1,117 @@
+.choice-circle {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.choice-circle:not(:disabled):hover {
+    transform: scale(1.1);
+}
+
+.choice-circle.large {
+    width: 290px;
+    height: 290px;
+}
+
+.inner-white {
+    width: 75%;
+    height: 75%;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 6px 0 0 #dadada;
+}
+
+.choice-circle.large .inner-white {
+    box-shadow: inset 0 12px 0 0 #dadada;
+}
+
+.inner-white img {
+    width: 50%;
+    height: auto;
+}
+
+.choice-circle.scissors {
+    background: var(--scissors-gradient);
+    box-shadow: var(--scissors-shadow);
+}
+
+.choice-circle.paper {
+    background: var(--paper-gradient);
+    box-shadow: var(--paper-shadow);
+}
+
+.choice-circle.rock {
+    background: var(--rock-gradient);
+    box-shadow: var(--rock-shadow);
+}
+
+.choice-circle.lizard {
+    background: var(--lizard-gradient);
+    box-shadow: var(--lizard-shadow);
+}
+
+.choice-circle.spock {
+    background: var(--spock-gradient);
+    box-shadow: var(--spock-shadow);
+}
+
+/* Large version adjustments */
+.choice-circle.large.scissors {
+    box-shadow: 0 12px 0 0 hsl(28, 76%, 44%);
+}
+
+.choice-circle.large.paper {
+    box-shadow: 0 12px 0 0 hsl(229, 64%, 46%);
+}
+
+.choice-circle.large.rock {
+    box-shadow: 0 12px 0 0 hsl(347, 75%, 35%);
+}
+
+.choice-circle.large.lizard {
+    box-shadow: 0 12px 0 0 hsl(261, 51%, 44%);
+}
+
+.choice-circle.large.spock {
+    box-shadow: 0 12px 0 0 hsl(194, 58%, 42%);
+}
+
+@media (max-width: 768px) {
+    .choice-circle {
+        width: 96px;
+        height: 96px;
+    }
+
+    .choice-circle.large {
+        width: 130px;
+        height: 130px;
+    }
+
+    .choice-circle.scissors {
+        box-shadow: 0 4px 0 0 hsl(28, 76%, 44%);
+    }
+
+    .choice-circle.paper {
+        box-shadow: 0 4px 0 0 hsl(229, 64% 46%);
+    }
+
+    .choice-circle.rock {
+        box-shadow: 0 4px 0 0 hsl(347, 75%, 35%);
+    }
+
+    .choice-circle.lizard {
+        box-shadow: 0 4px 0 0 hsl(261, 51%, 44%);
+    }
+
+    .choice-circle.spock {
+        box-shadow: 0 4px 0 0 hsl(194, 58%, 42%);
+    }
+}

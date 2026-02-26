@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+:root {
+  /* Primary Colors */
+  --scissors-gradient: linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  --paper-gradient: linear-gradient(to bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  --rock-gradient: linear-gradient(to bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  --lizard-gradient: linear-gradient(to bottom, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+  --spock-gradient: linear-gradient(to bottom, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+  
+  /* Primary Box Shadows (for thickness effect) */
+  --scissors-shadow: 0 6px 0 0 hsl(28, 76%, 44%);
+  --paper-shadow: 0 6px 0 0 hsl(229, 64%, 46%);
+  --rock-shadow: 0 6px 0 0 hsl(347, 75%, 35%);
+  --lizard-shadow: 0 6px 0 0 hsl(261, 51%, 44%);
+  --spock-shadow: 0 6px 0 0 hsl(194, 58%, 42%);
+
+  /* Neutral */
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+  --header-outline: hsl(246, 11%, 37%);
+  --white: #ffffff;
+
+  /* Background */
+  --radial-gradient: radial-gradient(circle at top, hsl(214, 47%, 23%), hsl(237, 48%, 15%));
+
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  line-height: normal;
+  font-weight: 600;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--radial-gradient);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  text-transform: uppercase;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  background: none;
+  text-transform: uppercase;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+

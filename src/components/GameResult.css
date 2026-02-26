@@ -1,0 +1,146 @@
+.game-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    max-width: 940px;
+    margin-top: 48px;
+    transition: gap 0.3s;
+}
+
+.game-result.has-result {
+    gap: 40px;
+}
+
+.choice-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.side-label {
+    font-size: 24px;
+    letter-spacing: 3px;
+    z-index: 10;
+}
+
+.choice-container {
+    position: relative;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-house-slot {
+    width: 220px;
+    height: 220px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.result-announcement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    z-index: 20;
+    animation: fadeIn 0.3s forwards;
+}
+
+.result-text {
+    font-size: 56px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.play-again-btn {
+    background: white;
+    color: var(--dark-text);
+    padding: 14px 60px;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    transition: color 0.2s;
+}
+
+.play-again-btn:hover {
+    color: var(--red-600);
+}
+
+.winner-bg::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 50%, transparent 100%);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 60px rgba(255, 255, 255, 0.04),
+        0 0 0 130px rgba(255, 255, 255, 0.03),
+        0 0 0 210px rgba(255, 255, 255, 0.02);
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .game-result {
+        flex-wrap: wrap;
+        gap: 40px;
+        max-width: 311px;
+    }
+
+    .choice-block {
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+
+    .side-label {
+        font-size: 15px;
+    }
+
+    .choice-container {
+        width: 130px;
+        height: 130px;
+    }
+
+    .empty-house-slot {
+        width: 110px;
+        height: 110px;
+    }
+
+    .result-announcement {
+        order: 3;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .result-text {
+        font-size: 56px;
+    }
+
+    .winner-bg::before {
+        box-shadow:
+            0 0 0 30px rgba(255, 255, 255, 0.04),
+            0 0 0 65px rgba(255, 255, 255, 0.03),
+            0 0 0 105px rgba(255, 255, 255, 0.02);
+    }
+}

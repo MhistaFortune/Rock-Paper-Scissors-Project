@@ -1,0 +1,91 @@
+.game-selection {
+    position: relative;
+    width: 480px;
+    height: 480px;
+    margin-top: 48px;
+}
+
+.pentagon-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.pentagon-bg img {
+    width: 330px;
+}
+
+.choices-grid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.choice-wrapper {
+    position: absolute;
+}
+
+.scissors-pos {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.spock-pos {
+    top: 105px;
+    left: -10px;
+}
+
+.paper-pos {
+    top: 105px;
+    right: -10px;
+}
+
+.lizard-pos {
+    bottom: 0;
+    left: 40px;
+}
+
+.rock-pos {
+    bottom: 0;
+    right: 40px;
+}
+
+@media (max-width: 768px) {
+    .game-selection {
+        width: 311px;
+        height: 311px;
+        margin-top: 64px;
+    }
+
+    .pentagon-bg img {
+        width: 220px;
+    }
+
+    .scissors-pos {
+        top: 0;
+    }
+
+    .spock-pos {
+        top: 75px;
+        left: -5px;
+    }
+
+    .paper-pos {
+        top: 75px;
+        right: -5px;
+    }
+
+    .lizard-pos {
+        bottom: 0;
+        left: 20px;
+    }
+
+    .rock-pos {
+        bottom: 0;
+        right: 20px;
+    }
+}
